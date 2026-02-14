@@ -19,13 +19,13 @@ try {
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('oaksoe334@gmail.com', 'Mailer');         //Set the sender of the message (your email address)
-    $mail->addAddress('ryuzakibane@gmail.com', 'Joe User');     //Add a recipient (your bae's email address)
+    $mail->setFrom('oaksoe334@gmail.com', 'Mailer');
+    $mail->addAddress('ryuzakibane@gmail.com', 'Joe User');
 
     //Content
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
-    $mail->Body    = 'Happy Valentine's Day to the most special person in my life. I want you to know that I have loved you from the very first moment, and I can't stand the thought of losing you day by day. You are the only person for me. Everything is broken now, and I never imagined it would be this way. I still miss you and I still love you. I just want you to be happy and to see you smile. Please remember me, even if I’m not beside you anymore. I hope our memories never fade away. I love you, Swe. ❤';
+    $mail->Body    = "Happy Valentine's Day to the most special person in my life. I want you to know that I have loved you from the very first moment, and I can't stand the thought of losing you day by day. You are the only person for me. Everything is broken now, and I never imagined it would be this way. I still miss you and I still love you. I just want you to be happy and to see you smile. Please remember me, even if Im not beside you anymore. I hope our memories never fade away. I love you, Swe. ❤";
 
     $mail->send();
     echo 'Message has been sent';
