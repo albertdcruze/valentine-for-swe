@@ -20,15 +20,13 @@ try {
 
     //Recipients
     $mail->setFrom('oaksoe334@gmail.com', 'OAK');
-    $mail->addAddress('ryuzakibane@gmail.com', 'SWE');
+    $mail->addAddress('rka@gmail.com', 'SWE');
 
     //Content
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
     $mail->Body    = "Happy Valentine's Day to the most special person in my life. I want you to know that I have loved you from the very first moment, and I can't stand the thought of losing you day by day. You are the only person for me. Everything is broken now, and I never imagined it would be this way. I still miss you and I still love you. I just want you to be happy and to see you smile. Please remember me, even if Im not beside you anymore. I hope our memories never fade away. I love you, Swe. ❤";
 	
-	// Attaching the video file
-	$mail->addAttachment('/public/Hammie.mp4', 'Hammie.mp4');
 
     $mail->send();
     echo 'Message has been sent';
