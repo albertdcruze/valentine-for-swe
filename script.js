@@ -1,3 +1,21 @@
+document.getElementById('yes-btn').addEventListener('click', function() {
+    const enterScreen = document.getElementById('enter-screen');
+    const mainContent = document.getElementById('main-content');
+    const audio = document.getElementById('vday-music');
+    
+    // 1. Play the music
+    audio.play();
+
+    // 2. Hide the enter screen
+    enterScreen.style.display = 'none';
+
+    // 3. Show the main website content
+    mainContent.style.display = 'block';
+    
+    // 4. Trigger any animations for your 7 sentences
+    window.requestAnimationFrame(draw);
+});
+
 var canvas = document.getElementById("starfield");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -243,5 +261,3 @@ window.addEventListener("resize", function () {
     canvas.height = window.innerHeight;
     baseFrame = context.getImageData(0, 0, window.innerWidth, window.innerHeight);
 });
-
-window.requestAnimationFrame(draw);
